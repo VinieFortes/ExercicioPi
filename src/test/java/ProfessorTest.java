@@ -29,5 +29,13 @@ class ProfessorTest {
         professor.setNaturalidade(cidade);
         assertEquals(cidade, professor.cidadeNascimento());
     }
-
+    @Test
+    void diretor() {
+        Professor professor = new Professor();
+        Professor diretor = new Professor();
+        Escola escola = new Escola().setDiretor(diretor);
+        Curso curso = new Curso().setEscola(escola);
+        professor.setContratadoCurso(curso);
+        assertEquals(diretor, professor.getDiretor());
+    }
 }

@@ -15,13 +15,13 @@ class AlunoTest {
             assertEquals("Rio de Janeiro", aluno.getNaturalidade().getEstado().RetornaEstado());
         }
     @Test
-    void CoordenadorCurso() {
-        Aluno aluno = new Aluno();
-        Curso curso = new Curso();
-        Professor coordenador = new Professor();
-        coordenador.setNome("Marco");
-        curso.setCoordenador(coordenador);
-        aluno.setCursoMatriculado(curso);
-        assertEquals("Marco", aluno.getCoordenador().getNome());
+        void CoordenadorCurso() {
+            Aluno aluno = new Aluno();
+            Curso curso = new Curso();
+            Professor coordenador = new Professor();
+            coordenador.setNome("Marco");
+            curso.setCoordenador(coordenador);
+            aluno.setCursoMatriculado(curso);
+            assertEquals("Marco", aluno.getCoordenador().getNome());
     }
 }
